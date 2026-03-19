@@ -1,0 +1,21 @@
+{
+  "application_id": "APP-2026-003",
+  "applicant": {
+    "age": 38,
+    "gender": "female",
+    "smoking": false
+  },
+  "health_conditions": [],
+  "coverage": {
+    "product_code": "LIFE-TERM-20",
+    "coverage_amount": 300000,
+    "coverage_period_years": 20,
+    "premium_frequency": "annual"
+  },
+  "beneficiaries": [
+    {
+      "relationship": "parent",
+      "percentage": 100
+    }
+  ]
+}

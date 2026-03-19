@@ -1,0 +1,36 @@
+{
+  "application_id": "APP-2026-002",
+  "applicant": {
+    "age": 72,
+    "gender": "male",
+    "occupation": "retired",
+    "smoking": true,
+    "bmi": 31.4
+  },
+  "health_conditions": [
+    {
+      "condition": "diabetes",
+      "diagnosed_year": 2014,
+      "controlled": false,
+      "medication": "insulin"
+    },
+    {
+      "condition": "hypertension",
+      "diagnosed_year": 2012,
+      "controlled": false,
+      "medication": "valsartan"
+    }
+  ],
+  "coverage": {
+    "product_code": "LIFE-TERM-20",
+    "coverage_amount": 400000,
+    "coverage_period_years": 15,
+    "premium_frequency": "annual"
+  },
+  "beneficiaries": [
+    {
+      "relationship": "child",
+      "percentage": 100
+    }
+  ]
+}

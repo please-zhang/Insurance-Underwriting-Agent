@@ -1,0 +1,112 @@
+{
+  "rules": [
+    {
+      "rule_id": "R001",
+      "category": "age",
+      "description": "年龄 18-60 岁且无重大既往症时可按标准体承保。",
+      "criteria": {
+        "min_age": 18,
+        "max_age": 60
+      },
+      "impact": "positive",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R002",
+      "category": "age",
+      "description": "年龄 61-65 岁需结合健康状况加费评估。",
+      "criteria": {
+        "min_age": 61,
+        "max_age": 65
+      },
+      "impact": "negative",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R003",
+      "category": "age",
+      "description": "年龄超过 75 岁不予承保。",
+      "criteria": {
+        "min_age": 76
+      },
+      "impact": "negative",
+      "hard_stop": true
+    },
+    {
+      "rule_id": "R004",
+      "category": "condition",
+      "description": "高血压已受控且连续 12 个月稳定，可承保但建议加费。",
+      "criteria": {
+        "condition": "hypertension",
+        "controlled": true
+      },
+      "impact": "negative",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R005",
+      "category": "condition",
+      "description": "高血压未受控需进一步核查，严重者拒保。",
+      "criteria": {
+        "condition": "hypertension",
+        "controlled": false
+      },
+      "impact": "negative",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R006",
+      "category": "condition",
+      "description": "糖尿病未受控或存在并发症时拒保。",
+      "criteria": {
+        "condition": "diabetes",
+        "controlled": false
+      },
+      "impact": "negative",
+      "hard_stop": true
+    },
+    {
+      "rule_id": "R007",
+      "category": "smoking",
+      "description": "吸烟申请人统一加费 15%。",
+      "criteria": {
+        "smoking": true
+      },
+      "impact": "negative",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R008",
+      "category": "bmi",
+      "description": "BMI 超过 30 需提升风险等级。",
+      "criteria": {
+        "bmi_gt": 30
+      },
+      "impact": "negative",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R009",
+      "category": "coverage",
+      "description": "标准成人定期寿险保额上限为 100 万元。",
+      "criteria": {
+        "product_code": "LIFE-TERM-20",
+        "max_coverage_amount": 1000000
+      },
+      "impact": "neutral",
+      "hard_stop": false
+    },
+    {
+      "rule_id": "R010",
+      "category": "coverage",
+      "description": "66 岁及以上申请 LIFE-TERM-20 时保额超过 30 万元拒保。",
+      "criteria": {
+        "product_code": "LIFE-TERM-20",
+        "min_age": 66,
+        "max_coverage_amount": 300000
+      },
+      "impact": "negative",
+      "hard_stop": true
+    }
+  ]
+}

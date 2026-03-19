@@ -1,0 +1,15 @@
+config/providers.yaml
+data/audit/
+data/chroma_db/
+data/cache/
+__pycache__/
+.env
+*.pyc
+.pytest_cache/
+.claude/
+
+# 私人文件，不上传
+INTERVIEW_PREP.md
+IMPLEMENTATION_PLAN.md
+TODOS.md
+CLAUDE.md
