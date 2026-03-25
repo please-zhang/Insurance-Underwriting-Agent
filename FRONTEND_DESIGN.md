@@ -2,7 +2,7 @@
 
 ## Product Context
 - **What this is:** AI 核保工作流展示/演示页面，可视化展示投保申请从进入系统到 AI 决策输出的完整流程
-- **Who it's for:** 面试官、投资人、业务领导、技术同行 — 需要直观理解 AI 核保系统工作原理的人
+- **Who it's for:** 业务方、技术同行、投资人 — 需要直观理解 AI 核保系统工作原理的人
 - **Space/industry:** 保险科技 (InsurTech) / AI Agent 工作流可视化
 - **Project type:** 展示/演示页面 (Showcase / Demo Page)
 - **Language:** 中英混合 — 中文界面，英文技术术语和代码注释
